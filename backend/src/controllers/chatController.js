@@ -5,7 +5,7 @@ const { fetchClinicalTrials } = require('../services/clinicalTrialsService');
 const { rankPublications, rankClinicalTrials } = require('../services/rankingService');
 const { buildResearchPrompt } = require('../utils/promptBuilder');
 const { callLLM, extractRelevantInfo } = require('../services/llmService');
-const Conversation = require('../models/Conversation');
+const Conversation = require('../models/conversation');
 const { v4: uuidv4 } = require('uuid');
 
 async function handleChat(req, res) {
